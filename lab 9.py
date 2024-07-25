@@ -5,8 +5,8 @@ def encode(password):
         password_list.append(str(new_num))
     return ''.join(password_list)
 
-
-
+def decode(password):
+    print(f"The encoded password is {encode(password)}, The original password is {password}")
 
 while True:
     print("Menu")
@@ -21,7 +21,7 @@ while True:
         print("Your password has been encoded and stored!")
 
     elif option == 2:
-
+        decode(password)
     elif option ==3:
         print("")
         break
